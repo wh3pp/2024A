@@ -9,7 +9,7 @@ class GDynamicArray{
   public:
     GDynamicArray();
     GDynamicArray(T arr[], int size);
-    GDynamicArray(const GDynamicArray<T> &o);
+    GDynamicArray(GDynamicArray<T> &o);
     ~GDynamicArray();
     void push_back(T val);
     void insert(int pos, T val);
@@ -40,8 +40,8 @@ GDynamicArray<T>::GDynamicArray(T arr[], int size){
 }
 
 template <typename T>
-GDynamicArray<T>::GDynamicArray(const GDynamicArray<T> &o){
-  o.size = size;
+GDynamicArray<T>::GDynamicArray(GDynamicArray<T> &o){
+  size = o.size;
   data = new T[size];
   for(int i=0;i<size;i++){
     data[i]=o.data[i];
@@ -57,42 +57,42 @@ void GDynamicArray<T>::push_back(T val){
   tmp[size] = val;
   delete [] data;
   data = tmp;
-  size += 1;
+  size++;
 }
 
 template <typename T>
 void GDynamicArray<T>::insert(int pos, T val){
   T *tmp = new T[size+1];
-  for(int i=0;i<pos-1;i++){
+  for(int i=0;i<pos;i++){
     tmp[i]=data[i];
   }
-  tmp[pos-1] = val;
-  for(int i=pos-1;i<size;i++){
+  tmp[pos] = val;
+  for(int i=pos;i<size;i++){
     tmp[i+1]=data[i];
   }
   delete [] data;
   data = tmp;
-  size += 1;
+  size++;
 }
 
 template <typename T>
 void GDynamicArray<T>::remove(int pos){
   T *tmp = new T[size-1];
-  for(int i=0;i<pos-1;i++){
+  for(int i=0;i<pos;i++){
     tmp[i]=data[i];
   }
-  for(int i=pos-1;i<size-1;i++){
+  for(int i=pos;i<size-1;i++){
     tmp[i]=data[i+1];
   }
   delete [] data;
   data = tmp;
-  size -= 1;
+  size--;
 }
 
 template <typename T>
 void GDynamicArray<T>::print() const{
   for(int i=0;i<size;i++){
-    std::cout << data[i] << " ";
+    std::cout << data[i] << ", ";
 }
   std::cout << std::endl;
 }
