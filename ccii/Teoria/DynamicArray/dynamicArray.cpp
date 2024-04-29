@@ -19,7 +19,7 @@ DynamicArray::DynamicArray(int arr[], int size){
 }
 
 DynamicArray::DynamicArray(DynamicArray &o){
-  o.size = size;
+  size = o.size;
   data = new int[size];
   for(int i=0;i<size;i++){
     data[i]=o.data[i];
@@ -34,34 +34,34 @@ void DynamicArray::push_back(int val){
   tmp[size] = val;
   delete [] data;
   data = tmp;
-  size += 1;
+  size++;
 }
 
 void DynamicArray::insert(int pos, int val){
   int *tmp = new int[size+1];
-  for(int i=0;i<pos-1;i++){
+  for(int i=0;i<pos;i++){
     tmp[i]=data[i];
   }
-  tmp[pos-1] = val;
-  for(int i=pos-1;i<size;i++){
+  tmp[pos] = val;
+  for(int i=pos;i<size;i++){
     tmp[i+1]=data[i];
   }
   delete [] data;
   data = tmp;
-  size += 1;
+  size++;
 }
 
 void DynamicArray::remove(int pos){
   int *tmp = new int[size-1];
-  for(int i=0;i<pos-1;i++){
+  for(int i=0;i<pos;i++){
     tmp[i]=data[i];
   }
-  for(int i=pos-1;i<size-1;i++){
+  for(int i=pos;i<size-1;i++){
     tmp[i]=data[i+1];
   }
   delete [] data;
   data = tmp;
-  size -= 1;
+  size--;
 }
 
 void DynamicArray::print() const{
