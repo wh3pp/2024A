@@ -22,4 +22,10 @@ int main(){
   copia2.push_back('r');
   copia2.insert(6,'i');
   copia2.print();
+  Point p1;
+  Point p2(1,2);
+  GDynamicArray<Point> puntos;
+  puntos.push_back(p1);
+  puntos.push_back(p2);
+  puntos.get(1).printpoint();
 } 

@@ -1,5 +1,40 @@
 #include <iostream>
 
+#ifndef POINT_H
+#define POINT_H
+
+class Point{
+    int x,y;
+  public: 
+    Point(){
+      x = 0;
+      y = 0;
+    }
+
+    Point(int x, int y){
+      this->x = x;
+      this->y = y;
+    }
+    void setX(int x){
+      this->x = x;
+    }
+    void setY(int y){
+      this->y = y;
+    }
+    int getX(){
+      return x;
+    }
+    int getY(){
+      return y;
+    }
+    void printpoint(){
+      std::cout << "(" << x << "," << y << ")" << std::endl;
+    }
+};
+
+
+#endif
+
 #ifndef G_DYNAMIC_ARRAY_H
 #define G_DYNAMIC_ARRAY_H
 template <typename T>
@@ -14,6 +49,7 @@ class GDynamicArray{
     void push_back(T val);
     void insert(int pos, T val);
     void remove(int pos);
+    T get(int pos);
     void print() const;
 };
 
@@ -87,6 +123,11 @@ void GDynamicArray<T>::remove(int pos){
   delete [] data;
   data = tmp;
   size--;
+}
+
+template <typename T>
+T GDynamicArray<T>::get(int pos){
+  return data[pos];
 }
 
 template <typename T>
