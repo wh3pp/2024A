@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 #ifndef STATIC_ARRAY_H
 #define STATIC_ARRAY_H
@@ -58,7 +57,7 @@ int GStaticArray<T>::getsize() const{
 template <typename T>
 void GStaticArray<T>::print() const{
   for (int i=0; i<size; i++){
-    cout << data[i] << ", ";
+    std::cout << data[i] << ", ";
   }
-  cout << endl;
+  std::cout << std::endl;
 }

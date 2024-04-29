@@ -9,13 +9,14 @@ int main(){
   b.set(2,'c');
   c.set(0,3.14);
   c.set(4,5.1213);
-  cout << a.get(0) << endl;
+  std::cout << a.get(0) << std::endl;
   a.print();
-  cout << b.get(0) << endl;
+  std::cout << b.get(0) << std::endl;
   b.print();
-  cout << c.get(0) << endl;
+  std::cout << c.get(0) << std::endl;
   c.print();
   GStaticArray<char> d = b;
-  cout << b.get(0) << endl;
+  std::cout << b.get(0) << std::endl;
+  d.set(4,'o');
   d.print();
 }
