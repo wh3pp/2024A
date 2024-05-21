@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charser="utf-8">
+    <title>Verificar Datos Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="caja">
+        <h2>Verificar Datos JavaScript</h2>
+        <div class="datos">
+          <table>
+            <tr>
+              <td><label for="nombre">Nombre Completo</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="nombre" id="nombre"></td>
+            </tr>
+            <tr>
+              <td><label for="mail">Email</label></td>
+            </tr>
+            <tr>
+              <td><input type="email" name="mail" id="mail"></td>       
+            </tr>
+            <tr>
+              <td><label for="telefono">Telefono</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="telefono" id="telefono"></td>
+            </tr>
+          </table>
+        </div>
+        <div id="procesar">
+          <input type="submit" name="submit" value="Procesar" onclick="check_name(); check_mail(); check_phone()">
+        </div>
+        <div class="datos">
+          <table>
+            <tr>
+              <td><label for="nombreinfo">Informacion Nombre:</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="nombreinfo" id="nombreinfo"></td>
+            </tr>
+            <tr>
+              <td><label for="mailinfo">Informacion Email:</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="mailinfo" id="mailinfo"></td>       
+            </tr>
+            <tr>
+              <td><label for="telinfo">Informacion Telefono:</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="telinfo" id="telinfo"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
