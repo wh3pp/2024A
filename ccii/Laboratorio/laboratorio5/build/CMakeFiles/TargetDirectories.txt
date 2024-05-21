@@ -1,3 +1,0 @@
-/home/wh3pp/tarea/build/CMakeFiles/ejercicio1.dir
-/home/wh3pp/tarea/build/CMakeFiles/edit_cache.dir
-/home/wh3pp/tarea/build/CMakeFiles/rebuild_cache.dir
