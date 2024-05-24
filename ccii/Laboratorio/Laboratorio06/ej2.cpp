@@ -39,7 +39,7 @@ double convertir(const char *str){
     }
     str++;
   }
-  return decimal;
+  return decimal*signo;
 }
 
 class Nodo{
