@@ -1,0 +1,113 @@
+body {
+  display: block;
+  margin: 7px;
+}
+#div-fondo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-image: url(../images/img1.jpg);
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 130px;
+}
+#div-perfil {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 1px;
+}
+#img-circulo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  
+}
+
+hr {
+  border-color: #3366CC;
+  width: 100px;
+}
+
+#nombre{
+  font-size: 40px;
+  font-weight: bold;
+  color: #66CCFF;
+  text-shadow: 1px 1px #000000;
+}
+#cargo{
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+} 
+.contenedor{
+  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.div-sec{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+#div-about {
+  width: 50%;
+  background-color: #ffffff;
+  margin: 15px;
+}
+.div-text {
+  margin: 20px;
+}
+#div-skills {
+  width: 50%;
+  background-color: #3366CC;
+  margin: 15px;
+}
+.tit-1 {
+  color: #000000;
+}
+.tit-2 {
+  color: #ffffff;
+}
+#div-educacion {
+  background-color: #3366CC;
+  margin: 15px;
+  width: 60%;
+}
+#div-idiomas {
+  background-color: #ffffff;
+  margin: 15px;
+  width: 40%;
+}
+#div-contacto {
+  background-color: #ffffff;
+  margin: 15px;
+  width: 30%;
+}
+#div-experiencia{
+  background-color: #3366CC;
+  margin: 15px;
+  width: 70%;
+}
+.text-blan{
+  color: #ffffff;
+}
+footer {
+  margin: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
