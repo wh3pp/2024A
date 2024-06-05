@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Practica 04</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <section id="seccion">
+      <h1>Roni Montanez</h1>
+      <table class="tabla_datos">
+        <tr>
+          <td><input type="submit" value="Calcular" onclick="calcular();"></td>
+          <td><input id="numero" type="text"></td>
+        </tr>
+      </table>
+      <br><br>
+      <table id="tablaNumeros" class="tabla">
+        <thead>
+          <tr>
+            <th>N</th>
+            <script>
+              insertarColumnas();
+            </script>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </body>
+</html>
