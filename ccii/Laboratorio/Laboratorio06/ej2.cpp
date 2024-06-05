@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-using namespace std;
 
 double potencia(double bas,int exp){
   double res;
