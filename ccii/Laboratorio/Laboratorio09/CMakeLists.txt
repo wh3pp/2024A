@@ -1,0 +1,3 @@
+cmake_minimum_required(VERSION 3.5)
+project(Observer)
+add_executable(observer ej2.cpp)
