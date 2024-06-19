@@ -1,0 +1,3 @@
+/home/wh3pp/2024A/ccii/Laboratorio/Laboratorio10/build/CMakeFiles/laboratorio10.dir
+/home/wh3pp/2024A/ccii/Laboratorio/Laboratorio10/build/CMakeFiles/edit_cache.dir
+/home/wh3pp/2024A/ccii/Laboratorio/Laboratorio10/build/CMakeFiles/rebuild_cache.dir

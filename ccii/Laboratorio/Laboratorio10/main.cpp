@@ -131,7 +131,7 @@ void ingresar(vector<Coord>& a, const char* nombre){
 
 int main(){
   vector<Coord> coordenadas;
-  ofstream output("output.txt");
+  //ofstream output("output.txt");
   ingresar(coordenadas,"DataGen.txt");
   chrono::duration<double> countMove;
   chrono::duration<double> countCopy;
@@ -146,11 +146,11 @@ int main(){
   cout << "Tiempo promedio usando swapCopy: " << countCopy.count()/15 << endl;
   cout << "Tiempo promedio usando swapMove: " << countMove.count()/15 << endl;
 
-  quicksortMove(coordenadas,0,499999);
+  /*quicksortMove(coordenadas,0,499999);
   for(const Coord& coord : coordenadas){
     output << coord << endl;
   }
-  output.close();
+  output.close();*/
   return 0;
 }
 
