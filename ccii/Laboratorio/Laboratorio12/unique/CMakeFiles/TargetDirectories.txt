@@ -1,3 +1,0 @@
-/home/wh3pp/2024A/ccii/Laboratorio/Laboratorio12/unique/CMakeFiles/unique.dir
-/home/wh3pp/2024A/ccii/Laboratorio/Laboratorio12/unique/CMakeFiles/edit_cache.dir
-/home/wh3pp/2024A/ccii/Laboratorio/Laboratorio12/unique/CMakeFiles/rebuild_cache.dir

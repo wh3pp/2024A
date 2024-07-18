@@ -1,3 +1,0 @@
-/home/wh3pp/2024A/ccii/Laboratorio/Laboratorio12/shared/CMakeFiles/shared.dir
-/home/wh3pp/2024A/ccii/Laboratorio/Laboratorio12/shared/CMakeFiles/edit_cache.dir
-/home/wh3pp/2024A/ccii/Laboratorio/Laboratorio12/shared/CMakeFiles/rebuild_cache.dir
