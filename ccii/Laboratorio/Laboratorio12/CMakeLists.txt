@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+#project(unique)
+#add_executable(unique unique.cpp)
+project(shared)
+add_executable(shared shared.cpp)
