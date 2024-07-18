@@ -1,0 +1,72 @@
+* {
+  text-align: center;
+}
+
+.contenedor {
+  width: 800px;
+  margin: auto;
+}
+
+.relleno {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col_50 {
+  flex: 50%; 
+  box-sizing: border-box;
+  padding: 8px 8px 0px 5px;
+}
+
+.col_100 {
+  flex: 100%;
+  box-sizing: border-box;
+  padding: 8px 0px 8px 0px;
+}
+.col_100 fieldset {
+  width: 50%;
+  margin: auto;
+}
+.color{
+  text-align: left;
+}
+.campos {
+  width: 100%;
+  padding: 10px; 
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 5px;
+  border-width: 1px;
+}
+.btn {
+  flex: 100%;
+  margin: 10px 8px 0px 5px;
+  padding: 10px;
+  color: white;
+  background-color: green;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.tabla{
+  width: 1000px;
+  margin: auto;
+  border-collapse: collapse;
+}
+.tabla th{
+  background-color: #0E2785;
+  color: white;
+  padding: 8px;
+  margin: auto;
+}
+.tabla td{
+  padding: 8px;
+  margin: auto;
+  border-bottom: 1px gray solid;
+}
+.tabla tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
